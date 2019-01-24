@@ -4,9 +4,8 @@ const audrey = document.getElementById("audrey")
     Add an event listener to the `document` object to listen
     for the "scroll" event.
 */
-.addEventListener("scroll", function (event) {
-    alert("wheel was scrolled");
-    // scroll_position = window.scrollY;
+document.addEventListener("scroll", function (event) {
+    audrey.style.width = `${window.scrollY / 3}px`;
     console.log(event)
     /*
         Adjust the width of audrey to be 1/3 the value of
